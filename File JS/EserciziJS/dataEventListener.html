@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Data e ora listener</title>
+    </head>
+    <body>
+        <button id = "bottone1">clicca per visualizzare la data e l'ora di oggi</button><br><br>
+        <button id = "bottone2">clicca per visualizzare la data e l'ora di oggi anche sulla console</button>
+        <script>
+            bottone1.onclick = function () {
+                let oggi = new Date();
+                let data = oggi.getDate()+'/'+(oggi.getMonth()+1)+'/'+oggi.getFullYear();
+                let orario = oggi.getHours() + ":" + oggi.getMinutes() + ":" + oggi.getSeconds();
+                alert(`giorno: ${data}, orario: ${orario}`);
+            }
+            bottone2.onclick = function () {
+                bottone2.addEventListener("click", function () {
+                    let oggi = new Date();
+                    let data = oggi.getDate()+'/'+(oggi.getMonth()+1)+'/'+oggi.getFullYear();
+                    let orario = oggi.getHours() + ":" + oggi.getMinutes() + ":" + oggi.getSeconds();
+                    alert(`giorno: ${data}, orario: ${orario}`);
+                    console.log(data);
+                    console.log(orario);
+                });
+            }
+        </script>
+    </body>
+</html>

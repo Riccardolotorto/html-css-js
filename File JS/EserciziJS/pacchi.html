@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Colli</title>
+    </head>
+    <body>
+        <button id="btn1">altezza (decrescente)</button>
+        <button id="btn2">larghezza (decrescente)</button>
+        <button id="btn3">peso (crescente)</button>
+        <script>
+            let colli = [{
+                            "codice": "LAV54",
+                            "descrizione": "lavatrice",
+                            "lunghezza": 54,
+                            "larghezza": 46,
+                            "altezza": 88,
+                            "peso": 92
+                        },
+                        {
+
+                            "codice": "LIB967",
+                            "descrizione": "libro",
+                            "lunghezza": 16,
+                            "larghezza": 25,
+                            "altezza": 4,
+                            "peso": 0.6
+                        },
+                        {
+                            "codice": "SCA003",
+                            "descrizione": "scarpe",
+                            "lunghezza": 18,
+                            "larghezza": 35,
+                            "altezza": 12,
+                            "peso": 1.2
+                        },
+                        {
+                            "codice": "CAR074",
+                            "descrizione": "carta igienica",
+                            "lunghezza": 32,
+                            "larghezza": 40,
+                            "altezza": 20,
+                            "peso": 2.5
+                        }];
+        btn1.onclick = function () {
+            let colliAltezza = colli.sort((a,b) => (b.altezza - a.altezza));
+            for (let i = 0; i < colliAltezza.length; i++) {
+                console.log(colliAltezza[i].codice);
+            }
+        }
+        btn2.onclick = function () {
+            let colliLarghezza = colli.sort((a,b) => (b.larghezza - a.larghezza));
+            for (let i = 0; i < colliLarghezza.length; i++) {
+                console.log(colliLarghezza[i].codice);
+            }
+        }
+        btn3.onclick = function () {
+            let colliPeso = colli.sort((a,b) => (a.peso - b.peso));
+            for (let i = 0; i < colliPeso.length; i++) {
+                console.log(colliPeso[i].codice);
+            }
+        }
+        </script>
+    </body>
+</html>

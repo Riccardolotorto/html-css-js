@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Form con diversi tipi di input</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Form con diversi tipi di input</h1>
+      <form>
+        <div class="form-group">
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" placeholder="Inserisci il tuo nome" required>
+          <div class="description">Inserisci il tuo nome completo.</div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Inserisci la tua email" required>
+          <div class="description">Inserisci la tua email.</div>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" placeholder="Inserisci la tua password" required>
+          <div class="description">Inserisci la tua password.</div>
+        </div>
+        <div class="form-group">
+          <label for="age">Età:</label>
+          <input type="number" id="age" name="age" placeholder="Inserisci la tua età" min="18" max="99" required>
+          <div class="description">Inserisci la tua età.</div>
+        </div>
+        <div class="form-group">
+          <label>Genere:</label>
+          <div class="radio-group">
+            <label for="male">
+              <input type="radio" id="male" name="gender" value="m" required> Maschio
+            </label>
+            <label for="female">
+              <input type="radio" id="female" name="gender" value="f"> Femmina
+            </label>
+            <label for="other">
+              <input type="radio" id="other" name="gender" value="o"> Altro
+            </label>
+          </div>
+          <div class="description">Seleziona il tuo genere.</div>
+        </div>
+        <div class="form-group">
+          <label for="range">Valutazione:</label>
+          <input type="range" id="range" name="range" min="1" max="10" value="5" required>
+          <div class="description">Assegna una valutazione da 1 a 10.</div>
+        </div>
+        <div class="form-group">
+          <label for="message">Messaggio:</label>
+          <textarea id="message" name="message" placeholder="Scrivi il tuo messaggio qui" required></textarea>
+          <div class="description">Scrivi il tuo messaggio.</div>
+        </div>
+        <button type="submit" onclick="stampaDati()">Invia</button>
+      </form>
+    </div>
+  </body>
+  <script src="js/script.js"></script>
+</html>

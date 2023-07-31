@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>injection</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <table id="myTable" width="500" name="miaTabella">
+        <tr class="riga" id="riga1">
+            <td id="td1" style="background-color: yellow">uno</td>
+            <td id="td2" style="background-color: red">due</td>
+        </tr>
+        <tr class="riga" id="riga2">
+            <td id="td3" style="background-color: green">tre</td>
+            <td id="td4" style="background-color: blue">quattro</td>
+        </tr>
+    </table>
+    <br />
+    <button id="button1">aggiungi cella in ogni riga</button>
+    <button id="button2">aggiungi riga</button>
+    <button id="button3">visualizz/nascondi tabella</button>
+    <script>
+        let table = document.getElementById("myTable");
+
+
+
+        //aggiungo una cella in fondo ad ogni riga
+        button1.onclick = function() {
+            let riga1 = document.getElementById('riga1');
+            let riga2 = document.getElementById('riga2');
+            //creo una scringa contenente del codice html
+            html = `<td id="tdAggiunto" style="background-color: orange">numero</td>`;
+
+            //accoda il codice html contenuto nella stringa al conenuto della tabella
+            riga1.innerHTML += html;
+            riga2.innerHTML += html;
+        }
+
+
+        //aggiungo una riga con 2 celle
+        button2.onclick = function() {
+            //creo una scringa contenente del codice html
+            html = `<tr>
+                        <td id="td5" style="background-color: orange">cinque</td>
+                        <td id="td6" style="background-color: brown">sei</td>
+                    </tr>`;
+
+            //accoda il codice html contenuto nella stringa al conenuto della tabella
+            table.innerHTML += html;
+        }
+
+
+        //nasconde/visualizza tabella
+        button3.onclick = function() {
+            if (table.className == "hidden") {
+                table.className = "";
+            } else {
+                table.className = "hidden";
+            }
+        }
+    </script>
+</body>
+
+</html>

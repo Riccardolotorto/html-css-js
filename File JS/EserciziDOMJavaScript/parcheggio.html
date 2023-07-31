@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcheggio</title>
+</head>
+<body>
+    <form onclick="esercizio()">
+        <input type = "text" id = "ora" name = "orario"> inserisci l'ora:<br>
+        <input type = "submit" value = "clicca per inviare" id = "bottone">
+    </form>
+    <script>
+        function differenzaInOre(inizio, fine) {
+                let minutiInizio = parseInt(inizio.split(":")[1]);
+                let minutiInizioDecimal = minutiInizio/60;
+
+                let minutiFine = parseInt(fine.split(":")[1]);
+                let minutiFineDecimal = minutiFine/60;
+
+                let oreInizio = parseInt(inizio.split(":")[0]);
+                let oreFine = parseInt(fine.split(":")[0]);
+
+                return (oreFine + minutiFineDecimal) - (oreInizio + minutiInizioDecimal);    
+            }
+            function esercizio() {
+                let inizio = document.getElementById('ora').value;
+                let oraBottone = new Date();
+                let fine = String(oraBottone.getHours() + ":" + oraBottone.getMinutes());
+                let calcolo = differenzaInOre(inizio, fine);
+                if (calcolo < 0.5) {
+                    alert("non devi pagare nulla");
+                } else if (calcolo > 0.5 && calcolo < 1) {
+                    alert("devi pagare 0.5€");
+                } else if (calcolo > 1 && calcolo < 2) {
+                    alert("devi pagare 1€");
+                } else if (calcolo > 2) {
+                    let prezzo = 0;
+                    let ora = Math.floor(calcolo);
+                    prezzo = (1 * 1) + ((ora - 1) * 0.8);
+                    alert(`devi pagare: ${prezzo}€`);
+                }
+            }
+    </script>
+</body>
+</html>

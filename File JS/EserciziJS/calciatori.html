@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calciatori</title>
+</head>
+<body>
+    <button id = "btn1">gol decrescente</button><br><br>
+    <button id = "btn2">partite crescente</button><br><br>
+    <button id = "btn3">media gol decrescente</button><br><br>
+    <button id = "btn4">giocatore migliore</button>
+    <script>
+        let gioc = [{
+                "nome": "Pelè",
+                "gol": 757,
+                "partite": 816
+            },
+            {
+                "nome": "Maradona",
+                "gol": 353,
+                "partite": 695
+            },
+            {
+                "nome": "Messi",
+                "gol": 804,
+                "partite": 1022
+            },
+            {
+                "nome": "C. Ronaldo",
+                "gol": 835,
+                "partite": 1153
+            }];
+        function stampaGiocatori(giocatori) {
+            for (let giocatore of giocatori) {
+                for (let proprieta in giocatore) {
+                    console.log(proprieta + ":" + giocatore[proprieta]);
+                }
+            }
+        }
+        btn1.onclick = function() {
+            arr1 = gioc.sort(function(a,b) {return b.gol - a.gol});
+            stampaGiocatori(arr1);
+        }
+        btn2.onclick = function() {
+            arr2 = gioc.sort(function(a,b) {return a.partite - b.partite});
+            stampaGiocatori(arr2);
+        }
+        btn3.onclick = function() {
+            arr3 = gioc.sort(function(a, b) {return (b.gol / b.partite) - (a.gol / a.partite)});
+            stampaGiocatori(arr3);
+        }
+        btn4.onclick = function() {
+            btn3.addEventListener("click", function() {alert(gioc[0].nome);});
+        }
+    </script>
+</body>
+</html>
