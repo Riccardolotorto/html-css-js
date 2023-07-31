@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Esercizio7</title>
+    </head>
+    <body>
+        <button id = 'latitudine'>visualizza le città più a nord di 40</button>
+        <button id = 'longitudine'>visualizza le città più a est di 11</button>
+        <button id = 'nuovo1'>numero di città più a nord di 40</button>
+        <button id = 'nuovo2'>numero di città più a est di 11</button>
+        <script>
+            let dati = [
+                    {
+                        "luogo": "Milano",
+                        "latitudine": 45.4654219,
+                        "longitudine": 9.1859243,
+                        "altitudine": 120, 
+                        "clima": "temperato umido"
+                    },
+                    {
+                        "luogo": "Roma",
+                        "latitudine": 41.9027835,
+                        "longitudine": 12.4963655,
+                        "altitudine": 21, 
+                        "clima": "mediterraneo"
+                    },
+                    {
+                        "luogo": "Aosta",
+                        "latitudine": 45.734955,
+                        "longitudine": 7.313076,
+                        "altitudine": 583, 
+                        "clima": "alpino"
+                    },
+                    {
+                        "luogo": "Palermo",
+                        "latitudine": 38.1156879,
+                        "longitudine": 13.3612671,
+                        "altitudine": 14, 
+                        "clima": "mediterraneo"
+                    }
+            ];
+
+            function stampaDati(luoghi) {
+                for (let luogo of luoghi) {
+                    for (let proprieta in luogo) {
+                        console.log(proprieta + ":" + luogo[proprieta]);
+                    }
+                }
+            }
+            
+            let arrLatitudine = dati.filter(dato => dato.latitudine > 40);
+            latitudine.onclick = function () {
+                stampaDati(arrLatitudine);
+            }
+
+            let arrLongitudine = dati.filter(dato => dato.longitudine > 11);
+            longitudine.onclick = function () {
+                stampaDati(arrLongitudine);
+            }
+
+            nuovo1.onclick = function () {
+                latitudine.addEventListener("click", function () {
+                    alert(arrLatitudine.length);
+                });
+            }
+
+            nuovo2.onclick = function () {
+                longitudine.addEventListener("click", function () {
+                    alert(arrLongitudine.length);
+                });
+            }
+        </script>
+    </body>
+</html>

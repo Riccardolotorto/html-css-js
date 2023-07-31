@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Esercizio8</title>
+        <style>
+            table {
+                border: 1px solid black;
+            }
+            .hidden {
+            display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <table id = "miaTabella">
+            <tbody id = "corpo">
+                <tr id = "riga1">
+                    <td id = "td1" style = "background-color: red;">UNO</td>
+                    <td id = "td2" style = "background-color: green;">DUE</td>
+                </tr>
+                <tr id = "riga2">
+                    <td id = "td3" style = "background-color: yellow;">TRE</td>
+                    <td id = "td4" style = "background-color: pink;">QAUTTRO</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <br>
+        <button id = "button1">colonna a destra</button>
+        <button id = "button2">riga in fondo</button>
+        <button id = "button3">eliminare la colonna a sinistra</button>
+        <button id = "button4">eliminare la prima riga</button>
+        <button id = "button5">numero di colonne</button>
+        <button id = "button6">numero di righe</button>
+        <button id = "button7">nascondi/visualizza tabella</button>
+        <script>
+            let table = document.getElementById("miaTabella");
+            let corpo = document.getElementById("corpo");
+
+
+
+            button1.onclick = function() {
+                let riga1 = document.getElementById("riga1");
+                let riga2 = document.getElementById("riga2");
+                html1 = `<td id="tdAggiunto1" style="background-color: gainsboro">colonna</td>`;
+                riga1.innerHTML += html1;
+                html2 = `<td id="tdAggiunto2" style="background-color: gainsboro">colonna</td>`;
+                riga2.innerHTML += html2;
+            }
+
+            button2.onclick = function() {
+                html = `<tr>
+                            <td id="td5" style="background-color: orange">ciao</td>
+                            <td id="td6" style="background-color: orange">ciao</td>
+                            <td id="tdAggiunto3" style="background-color: orange">ciao</td>
+                        </tr>`;
+                corpo.innerHTML += html;
+            }
+    
+    
+            button3.onclick = function () {
+                function removeColumn(index) {
+                    var rows = table.rows;
+                    
+                    for (var i = 0; i < rows.length; i++) {
+                        rows[i].deleteCell(index);
+                    }
+                }
+                removeColumn(0);
+            }
+
+            button4.onclick = function () {
+                function removeRow(index) {
+                    table.deleteRow(index);
+                }
+                removeRow(0);
+            }
+
+            button5.onclick = function () {
+                var headerRow = table.querySelector("tr");
+                var numColumns = headerRow.cells.length;
+                alert("Numero di colonne: " + numColumns);
+            }
+
+            button6.onclick = function () {
+                var tbody = table.getElementsByTagName("tbody")[0];
+                var numRows = tbody.rows.length;
+                alert("Numero di righe: " + numRows);
+            }
+
+            button7.onclick = function() {
+                if (table.className == "hidden") {
+                    table.className = "";
+                } else {
+                    table.className = "hidden";
+                }
+            }
+        </script>
+    </body>
+</html>

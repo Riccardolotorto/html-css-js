@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Esercizio6</title>
+    </head>
+    <body>
+        <form>
+            <input type = "text" id = "mese"> inserisci il tuo mese di nascita:<br>
+            <input type = "number" id = "giorno"> inserisci il tuo giorno di nascita:<br><br>
+        </form>
+        <button id="funzione">clicca per conoscere il tuo segno zodiacale</button>
+        <script>
+            funzione.onclick = function () {
+                let mese = document.getElementById('mese').value;
+                let giorno = document.getElementById('giorno').value;
+                if (mese == 'febbraio') {
+                    while (giorno < 1 || giorno > 28) {
+                        alert('giorno di nascita errato!');
+                        break;
+                    }     
+                } else if (mese == 'novembre' || mese == 'aprile' || mese == 'giugno' || mese == 'settembre') {
+                    while (giorno < 1 || giorno > 30) {
+                        alert('giorno di nascita errato!');
+                        break;
+                    } 
+                } else {
+                    while (giorno < 1 || giorno > 31) {
+                        alert('giorno di nascita errato!');
+                        break;
+                    } 
+                }
+
+                let segno;
+                if ((mese == 'marzo' && giorno >= 21 && giorno <=31) || (mese == 'aprile' && giorno <=19 && giorno >= 1)) {
+                    segno = 'ariete';
+                    alert('il tuo segno è: ' + segno);
+                } else if ((mese == 'aprile' && giorno >= 20 && giorno <= 30) || (mese == 'maggio' && giorno <=20 && giorno >= 1)) {
+                    segno = 'toro';
+                    alert('il tuo segno è: ' + segno);
+                } else if ((mese == 'maggio' && giorno >= 21 && giorno <= 31) || (mese == 'giugno' && giorno <=20 && giorno >= 1)) {
+                    segno = 'gemelli';
+                    alert('il tuo segno è: ' + segno);
+                } else if ((mese == 'giugno' && giorno >= 21 && giorno <= 30) || (mese == 'luglio' && giorno <=22 && giorno >= 1)) {
+                    segno = 'cancro';
+                    alert('il tuo segno è: ' + segno);
+                } else if ((mese == 'luglio' && giorno >= 23 && giorno <= 31) || (mese == 'agosto' && giorno <=23 && giorno >= 1)) {
+                    segno = 'leone';
+                    alert('il tuo segno è: ' + segno);
+                } else if ((mese == 'agosto' && giorno >= 24 && giorno <= 31) || (mese == 'settembre' && giorno <=22 && giorno >= 1)) {
+                    segno = 'vergine';
+                    alert('il tuo segno è: ' + segno);
+                } else if ((mese == 'settembre' && giorno >= 23 && giorno <= 30) || (mese == 'ottobre' && giorno <=22 && giorno >= 1)) {
+                    segno = 'bilancia';
+                    alert('il tuo segno è: ' + segno);
+                } else if ((mese == 'ottobre' && giorno >= 23 && giorno <= 31) || (mese == 'novembre' && giorno <=21 && giorno >= 1)) {
+                    segno = 'scorpione';
+                    alert('il tuo segno è: ' + segno);
+                } else if ((mese == 'novembre' && giorno >= 22 && giorno <= 30) || (mese == 'dicembre' && giorno <=21 && giorno >= 1)) {
+                    segno = 'sagittario';
+                    alert('il tuo segno è: ' + segno);
+                } else if ((mese == 'dicembre' && giorno >= 22 && giorno <= 31) || (mese == 'gennaio' && giorno <=19 && giorno >= 1)) {
+                    segno = 'capricorno';
+                    alert('il tuo segno è: ' + segno);
+                } else if ((mese == 'gennaio' && giorno >= 20 && giorno <= 31) || (mese == 'febbraio' && giorno <=19 && giorno >= 1)) {
+                    segno = 'acquario';
+                    alert('il tuo segno è: ' + segno);
+                } else if ((mese == 'febbraio' && giorno >= 20 && giorno <= 28) || (mese == 'marzo' && giorno <=20 && giorno >= 1)) {
+                    segno = 'pesci';
+                    alert('il tuo segno è: ' + segno);
+                }
+            }
+        </script>
+    </body>
+</html>

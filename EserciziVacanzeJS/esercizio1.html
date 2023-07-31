@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Esercizio1</title>
+    </head>
+    <body>
+        <script>
+            let mese = prompt('inserire il mese di nascita in lettere');
+            let giorno;
+            if (mese == 'febbraio') {
+                do {
+                    giorno = Number(prompt('inserisci il giorno di nascita'));
+                } while (giorno < 1 || giorno > 28)    
+            } else if (mese == 'novembre' || mese == 'aprile' || mese == 'giugno' || mese == 'settembre') {
+                do {
+                    giorno = Number(prompt('inserisci il giorno di nascita'));
+                } while (giorno < 1 || giorno > 30)
+            } else {
+                do {
+                    giorno = Number(prompt('inserisci il giorno di nascita'));
+                } while (giorno < 1 || giorno > 31)
+            }
+
+            let segno;
+            if ((mese == 'marzo' && giorno >= 21) || (mese == 'aprile' && giorno <=19)) {
+                segno = 'ariete';
+                alert('il tuo segno è: ' + segno);
+            } else if ((mese == 'aprile' && giorno >= 20) || (mese == 'maggio' && giorno <=20)) {
+                segno = 'toro';
+                alert('il tuo segno è: ' + segno);
+            } else if ((mese == 'maggio' && giorno >= 21) || (mese == 'giugno' && giorno <=20)) {
+                segno = 'gemelli';
+                alert('il tuo segno è: ' + segno);
+            } else if ((mese == 'giugno' && giorno >= 21) || (mese == 'luglio' && giorno <=22)) {
+                segno = 'cancro';
+                alert('il tuo segno è: ' + segno);
+            } else if ((mese == 'luglio' && giorno >= 23) || (mese == 'agosto' && giorno <=23)) {
+                segno = 'leone';
+                alert('il tuo segno è: ' + segno);
+            } else if ((mese == 'agosto' && giorno >= 24) || (mese == 'settembre' && giorno <=22)) {
+                segno = 'vergine';
+                alert('il tuo segno è: ' + segno);
+            } else if ((mese == 'settembre' && giorno >= 23) || (mese == 'ottobre' && giorno <=22)) {
+                segno = 'bilancia';
+                alert('il tuo segno è: ' + segno);
+            } else if ((mese == 'ottobre' && giorno >= 23) || (mese == 'novembre' && giorno <=21)) {
+                segno = 'scorpione';
+                alert('il tuo segno è: ' + segno);
+            } else if ((mese == 'novembre' && giorno >= 22) || (mese == 'dicembre' && giorno <=21)) {
+                segno = 'sagittario';
+                alert('il tuo segno è: ' + segno);
+            } else if ((mese == 'dicembre' && giorno >= 22) || (mese == 'gennaio' && giorno <=19)) {
+                segno = 'capricorno';
+                alert('il tuo segno è: ' + segno);
+            } else if ((mese == 'gannaio' && giorno >= 20) || (mese == 'febbraio' && giorno <=19)) {
+                segno = 'acquario';
+                alert('il tuo segno è: ' + segno);
+            } else if ((mese == 'febbraio' && giorno >= 20) || (mese == 'marzo' && giorno <=20)) {
+                segno = 'pesci';
+                alert('il tuo segno è: ' + segno);
+            }
+        </script>
+    </body>
+</html>
