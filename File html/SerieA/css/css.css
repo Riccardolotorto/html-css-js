@@ -1,0 +1,22 @@
+.colorerosso {
+    color: red;
+}
+p {
+    font-family: arial;
+    font-size: 30px;
+}
+.coloreverde {
+    color: green;
+}
+body {
+    background-color: orange;
+}
+div {
+    display: inline-block;
+}
+.coloreblu {
+    color: blue;
+}
+table, th, td {
+    border: 3px solid black;
+}

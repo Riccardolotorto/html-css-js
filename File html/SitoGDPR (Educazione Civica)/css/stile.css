@@ -1,0 +1,193 @@
+@media (min-width: 1200px) {
+    .coloreRosso {
+        color: crimson;
+    }
+    .centro {
+        text-align: center;
+    }
+    .grande {
+        font-size: 50px;
+    }
+    p {
+        font-family: arial;
+        font-style: oblique;
+    }
+    body {
+        background-color: gainsboro;
+    }
+    .coloreBlu {
+        color: blue;
+    }
+    .coloreVerde {
+        color: green;
+    }
+    .medio {
+        font-size: 25px;
+    }
+    .immagine {
+        width: 500;
+        height: 300;
+    }
+    .fondo {
+        background-color: red;
+        width: 100%;
+        height: 50;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .coloreOro {
+        color: gold;
+    }
+    .coloreRosso2 {
+        color:red;
+    }
+    .immagineResponsabile {
+        padding-top: 60px;
+        width: 600;
+        height: 400;
+    }
+    .immagineResponsabilePosizione {
+        padding-top: 40px;
+        height: 600;
+    }
+    table, th {
+        border: 1px solid black;
+    }
+    table {
+        width: 75%;
+        margin: auto;
+    }
+    .immagineTitolare {
+        padding-top: 40px;
+        width: 600;
+        height: 400;
+    }
+    .immagineTitolarePosizione {
+        padding-top: 40px;
+        height: 600;
+    }
+    .immagineInteressato {
+        padding-top: 40px;
+        width: 600;
+        height: 400;
+    }
+    .immagineInteressatoPosizione {
+        padding-top: 40px;
+        height: 600;
+    }
+    .div1 {
+        width:500;
+        height: 300;
+        background-color: gainsboro;
+        float:left;
+    }
+    .div2 {
+        width:500;
+        height: 300;
+        background-color: gainsboro;
+        float:left;
+    }
+    .divCompleto {
+        width: 1000;
+        height: 500;
+        margin: auto;
+    }
+}
+@media (max-width: 1199px) {
+    .coloreRosso {
+        color: crimson;
+    }
+    .centro {
+        text-align: center;
+    }
+    .grande {
+        font-size: 50px;
+    }
+    p {
+        font-family: arial;
+        font-style: oblique;
+    }
+    body {
+        background-color: gainsboro;
+    }
+    .coloreBlu {
+        color: blue;
+    }
+    .coloreVerde {
+        color: green;
+    }
+    .medio {
+        font-size: 20px;
+    }
+    .immagine {
+        width: 300;
+        height: 150;
+    }
+    .fondo {
+        background-color: red;
+        width: 100%;
+        height: 50;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .coloreOro {
+        color: gold;
+    }
+    .coloreRosso2 {
+        color:red;
+    }
+    .immagineResponsabile {
+        padding-top: 30px;
+        width: 400;
+        height: 200;
+    }
+    .immagineResponsabilePosizione {
+        padding-top: 20px;
+    }
+    table, th {
+        border: 1px solid black;
+    }
+    table {
+        width: 75%;
+        margin: auto;
+    }
+    .immagineTitolare {
+        padding-top: 20px;
+        width: 400;
+        height: 200;
+    }
+    .immagineTitolarePosizione {
+        padding-top: 20px;
+        height: 400;
+    }
+    .immagineInteressato {
+        padding-top: 20px;
+        width: 400;
+        height: 200;
+    }
+    .immagineInteressatoPosizione {
+        padding-top: 20px;
+        height: 400;
+    }
+    .div1 {
+        width:300;
+        height: 150;
+        background-color: gainsboro;
+        float:left;
+    }
+    .div2 {
+        width:300;
+        height: 150;
+        background-color: gainsboro;
+        float:left;
+    }
+    .divCompleto {
+        width: 300;
+        height: 500;
+        margin: auto;
+    }
+}

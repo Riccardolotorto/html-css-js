@@ -1,0 +1,51 @@
+.coloreRosso {
+    color: red;
+    font-style: initial;
+}
+.testoCentrato {
+    text-align: center;
+}
+.coloreBlu {
+    color:blue;
+}
+.coloreVerde {
+    color:green;
+}
+table, th, td{
+    border: 1px solid black;
+    width: 75%;
+    margin: auto;
+}
+th {
+    font-size: 20px;
+}
+.testoGrande {
+    font-size: 30px;
+}
+body {
+    background-color: gray;
+}
+.footer {
+    height: 25;
+    width:100%;
+    background-color: brown;
+}
+.immagine {
+    padding-top: 50px;
+}
+.centro {
+    text-align: center;
+}
+.coloreArancione {
+    color: orange;
+    float: left;
+    margin: 2px;
+    padding: 1px;
+    position: relative;
+}
+.bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+

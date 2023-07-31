@@ -1,0 +1,49 @@
+.coloreRosso {
+    color:red;
+    text-align: center;
+    font-family: arial;
+}
+.coloreBlu {
+    color: blue;
+}
+table, th, td{
+    border: 1px solid black;
+    width: 75%;
+    margin: auto;
+}
+th {
+    font-size: 20px;
+}
+.grande {
+    font-size: 25px;
+}
+body {
+    background-color:azure;
+}
+img {
+    width: 500;
+    height: 400;
+}
+.coloreVerde {
+    color:green;
+}
+.coloreGrigio {
+    color: gray;
+}
+.footer {
+    height: 25;
+    width:100%;
+    background-color: brown;
+}
+.coloreArancione {
+    color: orange;
+    float: left;
+    margin: 2px;
+    padding: 1px;
+    position: relative;
+}
+.bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

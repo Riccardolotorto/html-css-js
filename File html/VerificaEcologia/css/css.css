@@ -1,0 +1,192 @@
+@media (min-width: 1201px) {
+    .coloreRosso {
+        color: red;
+    }
+    .grande {
+        font-size: 50px;
+    }
+    body {
+        background-color: black;
+    }
+    p {
+        font-family: Arial;
+    }
+    .centro {
+        text-align: center;
+    }
+    .immagineGrande {
+        width: 700;
+        height: 400;
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+    table, th {
+        border: 2px solid blue;
+    }
+    th {
+        font-size: 20px;
+    }
+    .coloreVerde {
+        color:green;
+    }
+    table {
+        width: 75%;
+        margin: auto;
+    }
+    .coloreBlu {
+        color:blue;
+    }
+    .piccolo {
+        background-color: orange;
+        width: 400;
+        height: 400;
+        float: left;
+    }
+    .piccolo1 {
+        background-color: lightblue;
+        width: 400;
+        height: 400;
+        float: left;
+    }
+    .completo {
+        width: 1200;
+        height: 400;
+        margin: auto;
+    }
+    .paragrafo {
+        padding: 5px;
+    }
+    iframe {
+        padding-top: 20px;
+    }
+    .immagineDiv {
+        width: 200;
+        height: 200;
+        padding-left: 95px;
+    }
+    .footer {
+        background-color: gray;
+        width: 100%;
+        height: 50;
+    }
+    .medio {
+        font-size: 20px;
+    }
+    .auto {
+        padding: 10;
+    }
+    .immagineContatti {
+        width: 300;
+        height: 300;
+        padding-top: 30px;
+    }
+    .coloreAzzurro {
+        color:lightblue;
+    }
+    .piccolo2 {
+        background-color: brown;
+        width: 400;
+        height: 400;
+        float: left;
+    }
+    .bottone {
+        padding-bottom: 30px;
+    }
+}
+@media (min-width: 500px)  and (max-width: 1200px) {
+    .coloreRosso {
+        color: red;
+    }
+    .grande {
+        font-size: 50px;
+    }
+    body {
+        background-color: black;
+    }
+    p {
+        font-family: Arial;
+    }
+    .centro {
+        text-align: center;
+    }
+    .immagineGrande {
+        width: 300;
+        height: 200;
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+    table, th {
+        border: 2px solid blue;
+    }
+    th {
+        font-size: 20px;
+    }
+    .coloreVerde {
+        color:green;
+    }
+    table {
+        width: 75%;
+        margin: auto;
+    }
+    .coloreBlu {
+        color:blue;
+    }
+    .piccolo {
+        background-color: orange;
+        width: 300;
+        height: 400;
+        float: left;
+    }
+    .piccolo1 {
+        background-color: lightblue;
+        width: 300;
+        height: 400;
+        float: left;
+    }
+    .completo {
+        width: 300;
+        height: 1200;
+        margin: auto;
+    }
+    .paragrafo {
+        padding: 3px;
+    }
+    iframe {
+        padding-top: 20px;
+        width: 300;
+        height: 200;
+    }
+    .immagineDiv {
+        width: 100;
+        height: 100;
+        padding-left: 95px;
+    }
+    .footer {
+        background-color: gray;
+        width: 100%;
+        height: 50;
+    }
+    .medio {
+        font-size: 20px;
+    }
+    .auto {
+        padding: 10;
+    }
+    .immagineContatti {
+        width: 200;
+        height: 200;
+        padding-top: 30px;
+    }
+    .coloreAzzurro {
+        color:lightblue;
+    }
+    .piccolo2 {
+        background-color: brown;
+        width: 300;
+        height: 400;
+        float: left;
+    }
+    .bottone {
+        padding-bottom: 30px;
+    }
+}

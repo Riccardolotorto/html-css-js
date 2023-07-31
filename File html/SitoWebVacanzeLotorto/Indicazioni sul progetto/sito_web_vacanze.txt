@@ -1,0 +1,6 @@
+sito web per le vacanze:
+-homepage (con una parte descrittiva e con dei link che portano agli altri lavori)
+-ogni pagina deve contenere il menù e il footer (in basso alla pagina)
+-il footer deve contenere il progettatore del sito, ma volendo anche dei link ai social 
+-programmazione anche per altri tipi di schermi (come schermo del telofono e tablet; vedi lavoro sui div fatto) 
+-inserire un collegamento interattivo a google maps

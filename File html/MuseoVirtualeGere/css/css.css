@@ -1,0 +1,60 @@
+.coloreblu {
+    color: blue
+}
+
+.colorerosso {
+    color: red
+}
+
+.coloreverde {
+    color: green
+}
+
+body {
+    background-color: gray;
+}
+
+table, th, td {
+    border: 2px solid blue;
+}
+
+table{
+    width: 100%;
+}
+
+.grandetesto {
+    font-size: 30px;
+}
+
+.coloregiallo {
+    color: yellow;
+}
+
+div {
+    text-align: center;
+}
+
+img {
+    border: 2px solid red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+p {
+    font-style: italic;
+}
+
+th {
+    font-size: 25px;
+}
+
+@keyframes example {
+    0%   {left:0px; top:0px;}
+    25%  {left:200px; top:0px;}
+    100% {left:0px; top:0px;}
+}
+
+h3 {
+    font-style: oblique;
+}
